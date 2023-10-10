@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    text-decoration: none;
+}
+
+a {
+    color: black;
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 79px 88px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    color: black;
+
+}
+
+.wrapper img {
+    width: 42px;
+}
+
+.containerHero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapperPicture {
+    background-size: cover;
+    width: 298px;
+    height: 298px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.wrapperPicture img {
+    width: 298px;
+    height: 298px;
+}
+
+.container {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 88px;
+}
+
+.text {
+    text-align: center;
+}
+
+
+.text h1 {
+    margin-top: 40px;
+    font-size: 64px;
+}
+
+.text h2 {
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.search {
+    margin-top: 72px;
+    display: flex;
+    background-color: #D9D9D9;
+    border-radius: 17px;
+    width: 50.8%;
+    align-items: center;
+
+
+}
+.search input {
+    width: 100%;
+    height: 57px;
+    border-radius: 17px;
+    padding-left: 20px;
+    border: none;
+    background-color: #D9D9D9;
+}
+
+.search button {
+    color: white;
+    height: fit-content;
+    border: none;
+    background-color: darkgray;
+    border-radius: 10px;
+    padding: 10px 35px;
+    cursor: pointer;
+    margin: 0 15px;
+}
+
+.wrap {
+    margin-top: 145px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 51px;
+}
+
+.content {
+    position: relative;
+    display: inline-block;
+    height: 529px;
+    background-color: black;
+    border-radius: 22px;
+    overflow: hidden;
+    color: white;
+    text-overflow: ellipsis;
+    max-height: 100%; 
+}
+
+.contentText {
+    position: absolute;
+    color: white;
+    z-index: 100;
+    overflow:visible; 
+    text-overflow: ellipsis; 
+    margin-top: 50%;
+    padding: 0 50px;
+}
+
+.contentText p {
+    padding-bottom: 40px;
+}
+
+.contentImg img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 100%; 
+    opacity: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+    .wrap {
+        grid-template-columns: 1fr 1fr;
+        gap: 51px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .wrap {
+        grid-template-columns: 1fr;
+        gap: 51px;
+    }
+}
